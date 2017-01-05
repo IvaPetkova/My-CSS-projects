@@ -1,2 +1,2 @@
-# My-CSS-projects
+# CSS-projects
 My first CSS projects.
