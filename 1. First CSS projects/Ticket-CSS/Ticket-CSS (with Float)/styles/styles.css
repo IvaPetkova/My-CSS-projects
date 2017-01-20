@@ -1,0 +1,96 @@
+:root {
+    background-color: #595959;
+    font-family: calibri light;
+    font-size: 19px;
+}
+
+body,
+header,
+h1,
+section,
+span,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+header h1 {
+    margin: 0.4em 0 0.7em 0.2em;
+    font-size: 26px;
+    color: #adacab;
+}
+
+span:not(last-of-type) {
+    color: lightgray;
+    font-style: italic;
+    font-weight: bold
+}
+
+span.name {
+    float: left;
+    margin: 0 5.2em 0.1em 0.2em;
+}
+
+span.email {
+    float: left;
+    margin: 0 5.4em 0.1em 0.2em;
+}
+
+span.time {
+    float: left;
+    margin: 0 1.8em 0.1em 0.2em;
+}
+
+span.action {
+    float: left;
+    margin: 0 3.4em 1.9em 0.2em;
+}
+
+span.status {
+    float: left;
+    margin: 0 5.3em 0.1em 0.2em;
+}
+
+p.green-dot:before {
+    content: url("../Images/Green circle.png");
+}
+
+p.green-dot {
+    margin: 0 0 10px 0;
+    color: #f7e2a8;
+    font-weight: bold;
+}
+
+p.green-dot span:last-of-type {
+    color: red;
+    font-weight: bold;
+    font-style: normal;
+}
+
+p.email {
+    margin: 0 0 10px 0;
+    color: #f7e2a8;
+    font-weight: bold;
+}
+
+p.time {
+    margin: 0 0 10px 0;
+    color: #adacab;
+    font-weight: bold
+}
+
+p.action {
+    margin: 0 0 10px 0;
+    color: #adacab;
+    font-weight: bold
+}
+
+p.action :last-child {
+    color: #f7e2a8;
+    font-style: normal;
+}
+
+p.status {
+    color: #d87c20;
+    font-weight: bold;
+}
