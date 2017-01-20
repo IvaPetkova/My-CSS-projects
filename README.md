@@ -1,2 +1,3 @@
 # CSS-projects
-My first CSS projects.
+
+Some CSS projects.
