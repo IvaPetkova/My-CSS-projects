@@ -1,0 +1,57 @@
+:root {
+	background-color: #595959;
+	font-family: "calibri light", sans-serif;
+	font-size: 18px;
+}
+
+body, header, h1, section, span, p {
+	margin: 0px;
+	padding: 0px;
+}
+
+header h1 {
+	margin: 10px 0 20px 5px;
+	font-size: 26px;
+	color: #adacab;
+}
+
+section {
+	margin-left: 5px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	padding-bottom: 20px;
+}
+
+.left {
+	color: #eee;
+	width: 145px;
+ }
+
+.right {
+	display: flex;
+	flex-direction: column;
+}
+
+.link {
+	padding-top: 20px;
+}
+
+.yellow {
+	color: #f7e2a8;
+}
+
+.grey {
+	color: #adacab;
+}
+
+.orange {
+	color: #d87c20;
+}
+
+.red {
+	color: #f10814;
+}

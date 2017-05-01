@@ -1,0 +1,52 @@
+:root {
+	background-color: #595959;
+	font-family: "calibri light", sans-serif;
+	font-size: 18px;
+	font-weight: bold
+}
+
+body, table, tr, th, td {
+	margin: 0px;
+	padding: 0px
+}
+
+table tr th {
+	color: #adacab;
+	text-align: left;
+	font-size: 26px;
+	padding: 0 0 0.8rem 0;
+}
+
+table {
+	margin: 0.4rem 0 0 0.2rem;
+}
+
+table tr td {
+	padding: 0 0.5rem 0.7rem 0;
+}
+
+table tr td:first-child {
+	color: lightgray;
+	font-style: italic;
+	width: 7rem
+}
+
+.name, .email, .public-post {
+	color: #f7e2a8;
+}
+
+.no-support {
+	color: #f00;
+}
+
+.hours, .action {
+	color: #adacab;
+}
+
+.status {
+	color: #d87c20;
+}
+
+.up {
+	vertical-align: text-top;
+}
