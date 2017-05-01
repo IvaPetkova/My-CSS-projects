@@ -16,7 +16,7 @@ CSS Presentation
 ![picture2](https://cloud.githubusercontent.com/assets/3619393/7184114/1f79cb80-e464-11e4-9a3d-5c916c0390ce.png)
 
 ### Problem 3. Nested Divs
-*	Create the following web page
+*	Create the following web page 
 	*	Using `60` nested `div` elements
 
 ![picture3](https://cloud.githubusercontent.com/assets/3619393/7184113/1f78fcf0-e464-11e4-80f4-2285c7a4a765.png)
