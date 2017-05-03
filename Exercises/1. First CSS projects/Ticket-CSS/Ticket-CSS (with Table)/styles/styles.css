@@ -1,0 +1,72 @@
+:root {
+    background-color: #595959;
+    font-family: calibri light;
+    font-size: 19px;
+    font-weight: bold
+}
+
+body,
+table,
+tr,
+th,
+td {
+    margin: 0px;
+    padding: 0px
+}
+
+table tr th {
+    color: #adacab;
+    text-align: left;
+    font-size: 26px;
+    padding: 0 0 0.8em 0;
+}
+
+table {
+    margin: 0.4em 0 0 0.2em;
+}
+
+table tr td {
+    padding: 0 0.5em 0.7em 0;
+}
+
+table tr td:first-child {
+    color: lightgray;
+    font-style: italic;
+    width: 7em
+}
+
+.parker:before {
+    content: url("../Images/Green circle.png");
+}
+
+.parker {
+    color: #f7e2a8;
+}
+
+.no-active {
+    color: red;
+}
+
+.email {
+    color: #f7e2a8;
+}
+
+.hours {
+    color: #adacab;
+}
+
+.action {
+    color: #adacab;
+}
+
+.public-post {
+    color: #f7e2a8;
+}
+
+.status {
+    color: #d87c20;
+}
+
+.up {
+    vertical-align: text-top;
+}

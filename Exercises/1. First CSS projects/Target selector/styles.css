@@ -1,0 +1,7 @@
+a[name]:target:after {
+    content: url(./lamp.gif)
+}
+
+a[id]:target:after {
+    content: url(./Rotating_earth.gif)
+}

@@ -1,0 +1,39 @@
+table {
+    border: 1px solid black
+}
+
+tr,
+th,
+td {
+    border: -1px solid white;
+}
+
+table tr:nth-child(2n) {
+    background-color: #0f0;
+}
+
+table tr:nth-child(2n+1) {
+    background-color: #6f6
+}
+
+table tr:nth-child(1) {
+    color: white;
+    background-color: #888888;
+}
+
+table tr[tag] {
+    background-color: red;
+    color: white
+}
+
+table tr:nth-last-child(2),
+table tr:nth-last-child(3),
+table tr:nth-last-child(4) {
+    background-color: red;
+    color: white
+}
+
+table tr:last-child {
+    background-color: #800;
+    color: white
+}
