@@ -3,7 +3,7 @@
 		font-size: 13px;
 	}
 	
-	body>div {
+	.wrapper {
 		width: 450px;
 		height: 425px;
 		background-image: url('../images/Main_background.png');
@@ -11,20 +11,21 @@
 		border-radius: 8px
 	}
 	
-	div.header {
+	.header {
 		width: 450px;
 		height: 32px;
+		position: relative;
 		background-image: url('../images/Header_background.png');
 		border-top-left-radius: 8px;
 		border-top-right-radius: 8px;
 	}
 	
-	div.header img {
+	.header img {
 		float: left;
 		padding: 7px 4px 5px 10px;
 	}
 	
-	p#calculator-header {
+	.title {
 		display: inline-block;
 		margin: 8px 249px 6px 2px;
 		letter-spacing: 0px;
@@ -33,31 +34,36 @@
 		text-shadow: 10px -1px 10px #fff;
 	}
 	
-	div span input {
+	.close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-right: 8px;
+	}
+
+	.close img {
 		margin: -3px;
+		margin-top: 0;
+		padding: 0 0 5px 5px;
 		width: 30px;
 		vertical-align: top;
 		border-top: hidden;
 	}
-	
-	div span input {
-		margin-top: 0;
+		
+	.close img[alt=Minimize] {
+		height: 22px;
 	}
 	
-	div span input[alt=Minimize] {
-		height: 22px
-	}
-	
-	div span input[alt=Maximize] {
+	.close img[alt=Maximize] {
 		opacity: 0.7;
 	}
 	
-	div span input[alt=Close] {
+	.close img[alt=Close] {
 		width: 50px;
 		border-bottom-right-radius: 6px;
 	}
 	
-	div.big-table {
+	.main-table {
 		border: 1px solid #ddd;
 		box-shadow: 0 0 3px #000;
 		border-radius: 1px;
@@ -67,34 +73,34 @@
 		background-image: url('../images/Table_background.png');
 	}
 	
-	div nav {
+	.nav {
 		width: 100%;
 		height: 20px;
 		background-image: url('../images/Nav_background.png');
 	}
 	
-	div nav a {
+	.nav a {
 		text-decoration: none;
 		color: #444;
 		font-weight: 600;
 		font-size: 12px;
 	}
 	
-	div nav a:hover {
+	.nav a:hover {
 		text-decoration: underline;
 		color: blue;
 	}
 	
-	div nav span {
+	.nav span {
 		text-decoration: underline;
 	}
 	
-	nav ul {
+	.nav ul {
 		padding-left: 7px;
 		margin: 0;
 	}
 	
-	nav ul li {
+	.nav ul li {
 		display: inline-block;
 		margin: 3px 10px 1px 0;
 	}
@@ -103,7 +109,7 @@
 		border-top: 1px solid #aaa;
 	}
 	
-	input[type=text] {
+	input[type=number] {
 		margin: 12px 10px 3px 11px;
 		padding-top: 10px;
 		width: 410px;
@@ -119,7 +125,10 @@
 		background-image: url('../images/Output_background.png');
 	}
 	
-	div.zeros {
+	.digits {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 		width: 410px;
 		height: 65px;
 		margin: 4px 10px 3px 11px;
@@ -128,7 +137,7 @@
 		box-shadow: 0 0 2px #000;
 	}
 	
-	div.zeros p {
+	.digits p {
 		display: inline-block;
 		line-height: 1.1;
 		margin: 0;
@@ -136,13 +145,33 @@
 		font-size: 14px;
 		font-family: 'Nova Mono', monospace;
 		font-weight: bold;
-		color: #4e5987
+		color: #4e5987;
+		position: relative;
 	}
 	
-	div.zeros p span {
+	.digits p span {
+		display: block;
+	}
+	
+	.digits .grey {
 		color: #888;
 	}
-	
+
+	.digits .items span{
+		display: flex;
+		align-self: flex-start;
+	}
+
+	.digits .items .item {
+	    position: absolute;
+    	bottom: 2px;
+	}
+
+	.digits .flex-end .end{
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	div.text-align-right {
 		display: inline-block;
 		text-align: right;
@@ -202,6 +231,7 @@
 	
 	table tr td {
 		padding: 0;
+		height: 100%;
 	}
 	
 	table tr td button {
@@ -209,57 +239,60 @@
 		padding: 2px 2px 2px 2px;
 		width: 36px;
 		height: 28px;
-	}
-	
-	table.elements tr td button:hover {
 		color: #4e5987;
 		border-radius: 2px;
+	}
+	
+	table.elements tr td button:hover,
+	table.elements tr td button.equal:hover {
 		border: 1px solid gold;
 		box-shadow: 0 0 2px darkgoldenrod;
+	}
+
+	table.elements tr td button:hover {
 		background: url('../images/Hover.png');
 	}
 	
 	table.elements tr td button.equal:hover {
-		color: #4e5987;
-		border-radius: 2px;
-		border: 1px solid gold;
-		box-shadow: 0 0 2px darkgoldenrod;
 		background: url('../images/Hover(2).png')
 	}
 	
+	table tr td button.gray,
+	table tr td button.gray2 {
+		border: 1px solid #ddd;
+
+	}
+
 	table tr td button.gray {
 		font-size: 17px;
-		color: #4e5987;
-		border-radius: 2px;
-		border: 1px solid #ddd;
 		box-shadow: 0 0 2px #777;
 		background: url('../images/Buttons_background.png')
 	}
 	
 	table tr td button.gray2 {
-		color: #4e5987;
-		border-radius: 2px;
-		border: 1px solid #ddd;
 		box-shadow: 0 0 2px #03122b;
 		background: url('../images/Buttons_background.png')
 	}
 	
-	table tr td button.gray3 {
-		color: #4e5987;
-		border-radius: 2px;
+	table tr td button.gray3,
+	table tr td button.mod,
+	table tbody tr td button.right-smaller {
 		font-size: 12px;
-		font-weight: 600;
+	}
+
+	table tr td button.gray3,
+	table tr td button.mod {
 		border: 1px solid #eff;
+		font-weight: 600;
+	}
+
+	table tr td button.gray3 {
 		box-shadow: 0 0 2px #03122b;
 		background: url('../images/Buttons_background.png')
 	}
 	
 	table tr td button.mod {
-		color: #4e5987;
 		border-radius: 2px;
-		font-size: 12px;
-		font-weight: 600;
-		border: 1px solid #eff;
 		box-shadow: 0 0 2px black;
 		background: url('../images/Mod_background.png')
 	}
@@ -268,15 +301,13 @@
 		font-size: 13px;
 	}
 	
-	table tr td button.math2 {
+	table tr td button.math2,
+	table tbody tr td button.right-button {
 		font-size: 14px;
 	}
 	
 	table tr td button.number {
 		font-size: 16px;
-		color: #4e5987;
-		border-radius: 2px;
-		font-size: 19px;
 		font-weight: 500;
 		border: 1px solid #eff;
 		box-shadow: 0 0 2px black;
@@ -296,11 +327,11 @@
 	
 	table tbody tr td button.equal {
 		font-size: 23px;
+		height: 100%;
 	}
 	
 	td[rowspan="2"]>button.mod {
-		height: 106%;
-		color: #4e5987;
+		height: 94%;
 		background: url('../images/Mod_background(2).png');
 	}
 	
@@ -309,11 +340,6 @@
 	}
 	
 	table tbody tr td button.right-button {
-		font-size: 14px;
 		font-weight: 600;
 		font-family: 'Nova Mono', monospace;
-	}
-	
-	table tbody tr td button.right-smaller {
-		font-size: 12px;
 	}

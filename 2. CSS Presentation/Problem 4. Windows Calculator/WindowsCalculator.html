@@ -9,52 +9,52 @@
 </head>
 
 <body>
-	<div>
+	<div class="wrapper">
 		<div class="header">
-			<img src="./images/Calculator_icon.png">
-			<p id="calculator-header">Calculator </p>
-			<span>
-					<input type="image" src="./images/Minimize.png" alt="Minimize"/>
-					<input type="image" src="./images/Maximize.png" alt="Maximize" disabled="disabled"/>
-					<input type="image" src="./images/Close.png" alt="Close"/>
-			</span>
+			<img src="./images/Calculator_icon.png" />
+			<span class="title">Calculator </p>
+			<div class="close">
+				<img src="./images/Minimize.png" alt="Minimize" />
+				<img src="./images/Maximize.png" alt="Maximize" />
+				<img src="./images/Close.png" alt="Close" />
+			</div>
 		</div>
 
-		<div class="big-table">
-			<nav class="nav">
+		<div class="main-table">
+			<div class="nav">
 				<ul>
 					<li><a href="#"><span>V</span>iew</a></li>
 					<li><a href="#"><span>E</span>dit</a></li>
 					<li><a href="#"><span>H</span>elp</a></li>
 				</ul>
-			</nav>
-			<div class="output">
-				<input type="text" value="8854455">
 			</div>
-			<div class="zeros">
-				<p>
-					0000<br><span>63</span><br>0000<br><span>31</span>
+			<div class="output">
+				<input type="number" value="8854455">
+			</div>
+			<div class="digits">
+				<p class="grey">
+					<span>0000</span><span>63</span><span>0000</span><span>31</span>
 				</p>
-				<p>
-					0000<br><br>0000<br><br>
+				<p class="items">
+					<span>0000</span><span class="item">0000</span>
 				</p>
-				<p>
-					0000<br><br>1000<br><br>
+				<p class="items">
+					<span>0000</span><span class="item">1000</span>
 				</p>
-				<p>
-					0000<br><br>0111<br><br>
+				<p class="items">
+					<span>0000</span><span class="item">0111</span>
 				</p>
-				<p>
-					0000<br><span>47</span><br>0001<br><span>15</span>
+				<p class="grey">
+					<span>0000</span><span>47</span><span>0001</span><span>15</span>
 				</p>
-				<p>
-					0000<br><br>1011<br><br>
+				<p class="items">
+					<span>0000</span><span class="item">1011</span>
 				</p>
-				<p>
-					0000<br><br>1011<br><br>
+				<p class="items">
+					<span>0000</span><span class="item">1011</span>
 				</p>
-				<p>
-					0000<br><span>&nbsp&nbsp32</span><br>0111<br><span>&nbsp&nbsp&nbsp0</span>
+				<p class="grey flex-end">
+					<span>0000</span><span class="end">32</span><span>0111</span><span class="end">0</span>
 				</p>
 			</div>
 			<div class="common-type-radio">
@@ -86,7 +86,7 @@
 			<table class="elements">
 				<tbody>
 					<tr>
-						<td><button class="gray2">&nbsp</button></td>
+						<td><button class="gray2"> </button></td>
 						<td><button class="mod">Mod</button></td>
 						<td><button class="gray">A</button></td>
 						<td><button class="gray3">MC</button></td>
@@ -99,11 +99,11 @@
 						<td><button class="mod">(</button></td>
 						<td><button class="mod">)</button></td>
 						<td><button class="gray">B</button></td>
-						<td><button class="mod arrow">&#11104</button></td>
+						<td><button class="mod arrow">&#11104;</button></td>
 						<td><button class="mod">CE</button></td>
 						<td><button class="mod">C</button></td>
 						<td><button class="mod">&#177;</button></td>
-						<td><button class="gray right-smaller">&#8730;&nbsp&nbsp</button></td>
+						<td><button class="gray right-smaller">&#8730;&nbsp;&nbsp;</button></td>
 					</tr>
 					<tr>
 						<td><button class="mod">RoL</button></td>
@@ -113,7 +113,7 @@
 						<td><button class="number">8</button></td>
 						<td><button class="number">9</button></td>
 						<td><button class="mod math">/</button></td>
-						<td><button class="gray right-smaller">%&nbsp</button></td>
+						<td><button class="gray right-smaller">%&nbsp;</button></td>
 					</tr>
 					<tr>
 						<td><button class="mod">Or</button></td>
