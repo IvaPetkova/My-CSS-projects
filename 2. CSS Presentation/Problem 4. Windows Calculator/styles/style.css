@@ -1,0 +1,319 @@
+	body {
+		font-family: Arial, sans-serif;
+		font-size: 13px;
+	}
+	
+	body>div {
+		width: 450px;
+		height: 425px;
+		background-image: url('../images/Main_background.png');
+		border: 1px solid white;
+		border-radius: 8px
+	}
+	
+	div.header {
+		width: 450px;
+		height: 32px;
+		background-image: url('../images/Header_background.png');
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+	
+	div.header img {
+		float: left;
+		padding: 7px 4px 5px 10px;
+	}
+	
+	p#calculator-header {
+		display: inline-block;
+		margin: 8px 249px 6px 2px;
+		letter-spacing: 0px;
+		font-weight: 600;
+		color: #333;
+		text-shadow: 10px -1px 10px #fff;
+	}
+	
+	div span input {
+		margin: -3px;
+		width: 30px;
+		vertical-align: top;
+		border-top: hidden;
+	}
+	
+	div span input {
+		margin-top: 0;
+	}
+	
+	div span input[alt=Minimize] {
+		height: 22px
+	}
+	
+	div span input[alt=Maximize] {
+		opacity: 0.7;
+	}
+	
+	div span input[alt=Close] {
+		width: 50px;
+		border-bottom-right-radius: 6px;
+	}
+	
+	div.big-table {
+		border: 1px solid #ddd;
+		box-shadow: 0 0 3px #000;
+		border-radius: 1px;
+		width: 96.5%;
+		height: 90.3%;
+		margin: 0% 1% 1.5% 1.5%;
+		background-image: url('../images/Table_background.png');
+	}
+	
+	div nav {
+		width: 100%;
+		height: 20px;
+		background-image: url('../images/Nav_background.png');
+	}
+	
+	div nav a {
+		text-decoration: none;
+		color: #444;
+		font-weight: 600;
+		font-size: 12px;
+	}
+	
+	div nav a:hover {
+		text-decoration: underline;
+		color: blue;
+	}
+	
+	div nav span {
+		text-decoration: underline;
+	}
+	
+	nav ul {
+		padding-left: 7px;
+		margin: 0;
+	}
+	
+	nav ul li {
+		display: inline-block;
+		margin: 3px 10px 1px 0;
+	}
+	
+	div.output {
+		border-top: 1px solid #aaa;
+	}
+	
+	input[type=text] {
+		margin: 12px 10px 3px 11px;
+		padding-top: 10px;
+		width: 410px;
+		height: 42px;
+		font-size: 25px;
+		font-weight: bold;
+		color: #555;
+		text-align: right;
+		border: 1px solid #eff;
+		border-radius: 2px;
+		box-shadow: 0 0 2px #000;
+		font-family: 'Nova Mono', monospace;
+		background-image: url('../images/Output_background.png');
+	}
+	
+	div.zeros {
+		width: 410px;
+		height: 65px;
+		margin: 4px 10px 3px 11px;
+		border: 1px solid #eff;
+		border-radius: 2px;
+		box-shadow: 0 0 2px #000;
+	}
+	
+	div.zeros p {
+		display: inline-block;
+		line-height: 1.1;
+		margin: 0;
+		padding: 3px 9.8px 0px 7px;
+		font-size: 14px;
+		font-family: 'Nova Mono', monospace;
+		font-weight: bold;
+		color: #4e5987
+	}
+	
+	div.zeros p span {
+		color: #888;
+	}
+	
+	div.text-align-right {
+		display: inline-block;
+		text-align: right;
+	}
+	
+	div.common-type-radio {
+		display: inline-block;
+		margin: 5px 0px 4px 11px;
+	}
+	
+	div.numeral-system {
+		width: 72px;
+		height: 95px;
+		margin: 0 0 8px 1px;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+		box-shadow: 0 0 0.2em #03122b;
+	}
+	
+	div.word {
+		width: 72px;
+		height: 95px;
+		margin: 4px 0 2px 1px;
+		border: 1px solid #ddd;
+		border-radius: 2px;
+		box-shadow: 0 0 0.2em #03122b;
+	}
+	
+	input[type=radio] {
+		margin: 5px 0px -3px 0;
+		padding-bottom: 4px;
+		width: 14px;
+		height: 15px;
+		content: url('../images/Input_radio.png');
+	}
+	
+	input[type=radio]:checked {
+		content: url('../images/Input_radio(2).png');
+	}
+	
+	div form {
+		margin: 6px 0 4px 7px;
+		font-size: 12px;
+		color: #4e5987;
+		font-weight: bold;
+	}
+	
+	table {
+		float: right;
+		margin: 0px 7px 0px 0px;
+	}
+	
+	table.elements {
+		display: inline-block;
+		margin-left: 0px;
+	}
+	
+	table tr td {
+		padding: 0;
+	}
+	
+	table tr td button {
+		margin: 3px 2px 2px 2px;
+		padding: 2px 2px 2px 2px;
+		width: 36px;
+		height: 28px;
+	}
+	
+	table.elements tr td button:hover {
+		color: #4e5987;
+		border-radius: 2px;
+		border: 1px solid gold;
+		box-shadow: 0 0 2px darkgoldenrod;
+		background: url('../images/Hover.png');
+	}
+	
+	table.elements tr td button.equal:hover {
+		color: #4e5987;
+		border-radius: 2px;
+		border: 1px solid gold;
+		box-shadow: 0 0 2px darkgoldenrod;
+		background: url('../images/Hover(2).png')
+	}
+	
+	table tr td button.gray {
+		font-size: 17px;
+		color: #4e5987;
+		border-radius: 2px;
+		border: 1px solid #ddd;
+		box-shadow: 0 0 2px #777;
+		background: url('../images/Buttons_background.png')
+	}
+	
+	table tr td button.gray2 {
+		color: #4e5987;
+		border-radius: 2px;
+		border: 1px solid #ddd;
+		box-shadow: 0 0 2px #03122b;
+		background: url('../images/Buttons_background.png')
+	}
+	
+	table tr td button.gray3 {
+		color: #4e5987;
+		border-radius: 2px;
+		font-size: 12px;
+		font-weight: 600;
+		border: 1px solid #eff;
+		box-shadow: 0 0 2px #03122b;
+		background: url('../images/Buttons_background.png')
+	}
+	
+	table tr td button.mod {
+		color: #4e5987;
+		border-radius: 2px;
+		font-size: 12px;
+		font-weight: 600;
+		border: 1px solid #eff;
+		box-shadow: 0 0 2px black;
+		background: url('../images/Mod_background.png')
+	}
+	
+	table tr td button.math {
+		font-size: 13px;
+	}
+	
+	table tr td button.math2 {
+		font-size: 14px;
+	}
+	
+	table tr td button.number {
+		font-size: 16px;
+		color: #4e5987;
+		border-radius: 2px;
+		font-size: 19px;
+		font-weight: 500;
+		border: 1px solid #eff;
+		box-shadow: 0 0 2px black;
+		background: url('../images/Numbers_background.png');
+		font-family: 'Nova Mono', monospace;
+	}
+	
+	table tr td button.zero {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 18px;
+	}
+	
+	table tr td button.arrow {
+		font-size: 20px;
+		padding: 0 0 4px 0;
+	}
+	
+	table tbody tr td button.equal {
+		font-size: 23px;
+	}
+	
+	td[rowspan="2"]>button.mod {
+		height: 106%;
+		color: #4e5987;
+		background: url('../images/Mod_background(2).png');
+	}
+	
+	td[colspan="2"] button {
+		width: 95%;
+	}
+	
+	table tbody tr td button.right-button {
+		font-size: 14px;
+		font-weight: 600;
+		font-family: 'Nova Mono', monospace;
+	}
+	
+	table tbody tr td button.right-smaller {
+		font-size: 12px;
+	}
