@@ -1,0 +1,113 @@
+body, div, span, header, h1, nav, ul, li, a, img, section, article, aside {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+.wrapper {
+	width: 905px;
+	height: 630px;
+	border: 3px solid black;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	margin-top: 15px;
+	color: #1ABAF4;
+	font-size: 13px;
+	text-align: center;
+	margin-right: 25px;
+	margin-left: 25px;
+	border-bottom: 3px solid #5A5A5A;
+}
+
+header h1 {
+	display: inline-block;
+	text-decoration: underline;
+	padding-bottom: 10px;
+}
+
+.main {
+	height: 100%;
+	display: flex;
+	padding: 10px;
+	align-items: center;
+}
+
+.view {
+	border: 3px solid #5A5A5A;
+	padding: 12px 5px;
+	width: 585px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.view fieldset {
+	margin: 3px 5px;
+    width: 48%;
+    height: 166px;
+    border: 3px solid #5A5A5A;
+}
+
+.view fieldset legend {
+	font-weight: bold;
+	color: #3A3A3A;
+}
+
+.wrap {
+	display: flex;
+}
+
+.image {
+	display: flex;
+	flex-direction: column;
+}
+
+.description {
+	padding-top: 4px;
+}
+
+.description p {
+	margin: 0;
+	margin-top: 20px
+}
+
+.image img {
+	width: 120px;
+	margin: 5px 0 30px 0;
+	white-space: nowrap;
+}
+
+.character {
+	text-align: center;
+	width: 290px;
+}
+
+.label {
+	margin:  25px 20px;
+	font-size: 23px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.label span {
+	white-space: nowrap;
+}
+
+.ram {
+	margin:  25px 30px;
+}
+
+input[type=range] {
+	width: 215px;
+}
