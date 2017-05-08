@@ -33,8 +33,11 @@ header {
 
 header h1 {
 	display: inline-block;
-	text-decoration: underline;
 	padding-bottom: 10px;
+}
+
+header h1 span {
+	text-decoration: underline;
 }
 
 .main {
@@ -54,9 +57,9 @@ header h1 {
 
 .view fieldset {
 	margin: 3px 5px;
-    width: 48%;
-    height: 166px;
-    border: 3px solid #5A5A5A;
+	width: 48%;
+	height: 166px;
+	border: 3px solid #5A5A5A;
 }
 
 .view fieldset legend {
